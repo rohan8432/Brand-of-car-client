@@ -1,0 +1,38 @@
+[
+    {
+      "id": 1,
+      "brandName": "Toyota",
+      "image": "https://i.ibb.co/K6dF7RW/Toyota.jpg",
+      "details": "In the symphony of wheels and roads, Toyota orchestrates a melody of reliability, efficiency, and the joy of the journey."
+    },
+    {
+      "id": 2,
+      "brandName": "Tesla",
+      "image": "https://i.ibb.co/9Hv5KdQ/Tesla.jpg",
+      "details": "Where electrons dance, and dreams accelerate. Tesla: where the future of driving is a thrilling journey into the realms of innovation,"
+    },
+    {
+      "id": 3,
+      "brandName": "Mercedes-Benz",
+      "image": "https://i.ibb.co/52mBYMx/Mercedes-Benz.jpg",
+      "details": "Grace on wheels, Mercedes-Benz crafts dreams into reality. From every curve to every mile, excellence is not a choice; it's a legacy."
+    },
+    {
+      "id": 4,
+      "brandName": "Ferrari",
+      "image": "https://i.ibb.co/vV8FhGQ/Hourse.jpg",
+      "details": "Ferrari, where horsepower meets passion. In the pursuit of speed, each moment becomes a masterpiece."
+    },
+    {
+      "id": 5,
+      "brandName": "Ford",
+      "image": "https://i.ibb.co/TbpVMRM/Ford.jpg",
+      "details": "From the first roar to the latest innovation, Ford is the heartbeat of the open road. Unleashing dreams with every turn of the key."
+    },
+    {
+      "id": 6,
+      "brandName": "BMW",
+      "image": "https://i.ibb.co/wC71Zps/BMW.jpg",
+      "details": "Beyond the road lies the extraordinary, and BMW is the key to unlocking it. In every design, in every engine's heartbeat."
+    }
+  ]
