@@ -3,7 +3,7 @@ import logo from '../../assets/Brand/autoMedic.png'
 
 const Header = () => {
     return (
-        <div className="font-poppins">
+        <div className="font-poppins sticky">
 
             <nav className="sticky top-0 z-10 bg-yellow-50 p-3 px-6">
                 <div className=" flex justify-between items-center">
@@ -21,6 +21,11 @@ const Header = () => {
                                 isPending ? "pending" : isActive ? "text-white bg-violet-500 px-2  rounded-md  font-bold" : ""
                             }
                         >Add product</NavLink>
+                        <NavLink to="/allProducts"
+                            className={({ isActive, isPending }) =>
+                                isPending ? "pending" : isActive ? "text-white bg-violet-500 px-2  rounded-md  font-bold" : ""
+                            }
+                        >All Brand</NavLink>
                         <NavLink to="/myCart"
                             className={({ isActive, isPending }) =>
                                 isPending ? "pending" : isActive ? "text-white bg-violet-500 px-2  rounded-md  font-bold" : ""

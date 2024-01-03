@@ -10,11 +10,18 @@ import MyCart from './pages/MyCart/MyCart.jsx'
 import Login from './pages/Login/Login.jsx'
 import Register from './pages/Register/Register.jsx'
 import BrandDetails from './layouts/BrandDetails/BrandDetails.jsx'
+import ErrorPage from './layouts/Error/ErrorPage.jsx'
+// import AllProducts from './pages/AllProducts/AllProducts.jsx'
+
+
+
+
 
 const router = createBrowserRouter([
   {
     path: '/',
     element : <MainLayout></MainLayout>,
+    errorElement: <ErrorPage></ErrorPage>,
     children: [
       {
         path : '/',
@@ -28,6 +35,7 @@ const router = createBrowserRouter([
         path: '/myCart',
         element : <MyCart></MyCart>
       },
+     
       {
         path : '/login',
         element : <Login></Login>
@@ -36,10 +44,19 @@ const router = createBrowserRouter([
         path : '/register',
         element : <Register></Register>
       },
+      // {
+      //  path : '/brands/:id',
+      //  loader: ()=>fetch('/data.json'),
+      // // loader: ()=>fetch('http://localhost:5000/car'),
+      //  element : <BrandDetails></BrandDetails>
+      // },
       {
-       path : '/brandDetails',
-       element : <BrandDetails></BrandDetails>
-      }
+        path: '/brands/:brandName',
+        loader: ()=>fetch('http://localhost:5000/car'),
+        element: <BrandDetails></BrandDetails>
+      },
+      
+     
     ]
 
   }

@@ -10,6 +10,7 @@ export default {
         poppins: "'Poppins', sans-serif",
         lobster: "'Lobster', sans-serif",
         roboto: "'Roboto Slab', serif",
+        lato: 'Lato', 
         // openSans: "'Open Sans', sans-serif"
       }
     },
