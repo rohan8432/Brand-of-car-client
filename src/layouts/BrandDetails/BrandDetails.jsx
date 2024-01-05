@@ -12,16 +12,16 @@ const BrandDetails = () => {
     const {brandName} = useParams();
     const allBrands = useLoaderData();
     const [filterBrands, setFilterBrands] = useState(allBrands);
-    console.log(allBrands)
+    // console.log(allBrands)
 
     useEffect(()=>{
 
-        const filtered = filterBrands.filter(brand => brand.brandName === brandName);
+        const filtered = allBrands.filter(brand => brand.brandName === brandName);
 
         setFilterBrands(filtered);
 
 
-    },[brandName, filterBrands])
+    },[])
 
     return (
         <div>

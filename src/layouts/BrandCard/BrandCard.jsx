@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const BrandCard = ({brand}) => {
 
-    const {id, image, brandName, details} = brand;
+    const { image, brandName, details} = brand;
     return (
         <div>
              <div className="card card-compact bg-base-100 shadow-xl transition ease-in-out delay-120  hover:-translate-y-1 hover:scale-110 duration-250" data-aos="fade-right">

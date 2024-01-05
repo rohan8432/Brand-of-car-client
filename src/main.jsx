@@ -1,3 +1,4 @@
+
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 
@@ -11,6 +12,9 @@ import Login from './pages/Login/Login.jsx'
 import Register from './pages/Register/Register.jsx'
 import BrandDetails from './layouts/BrandDetails/BrandDetails.jsx'
 import ErrorPage from './layouts/Error/ErrorPage.jsx'
+import EachCardDetails from './layouts/EachCardDetails/EachCardDetails.jsx'
+import UpdateCar from './layouts/UpdateCar/UpdateCar.jsx'
+// import UpdateCar from './layouts/UpdateCar/UpdateCar.jsx'
 // import AllProducts from './pages/AllProducts/AllProducts.jsx'
 
 
@@ -44,18 +48,22 @@ const router = createBrowserRouter([
         path : '/register',
         element : <Register></Register>
       },
-      // {
-      //  path : '/brands/:id',
-      //  loader: ()=>fetch('/data.json'),
-      // // loader: ()=>fetch('http://localhost:5000/car'),
-      //  element : <BrandDetails></BrandDetails>
-      // },
+    
       {
         path: '/brands/:brandName',
         loader: ()=>fetch('http://localhost:5000/car'),
         element: <BrandDetails></BrandDetails>
       },
-      
+      {
+        path: '/eachCardDetails/:_id',
+        loader : ()=>fetch('http://localhost:5000/car'),
+        element : <EachCardDetails></EachCardDetails>
+      },
+      {
+        path: '/updateCar/:id',
+        loader: ({params})=>fetch(`http://localhost:5000/car/${params.id}`),
+        element: <UpdateCar></UpdateCar>
+      }
      
     ]
 
