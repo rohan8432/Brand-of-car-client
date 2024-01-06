@@ -19,7 +19,7 @@ const EachCardDetail = ({ EachBrands }) => {
         <div>
             <img className="" src={photoUrl} width={1263} alt="" />
 
-            <div className="h-40 absolute w-[1263px] bottom-[-34rem]" style={overlayStyle}>
+            <div className="h-40 absolute w-[1263px] bottom-[-36rem]" style={overlayStyle}>
 
                 <button className=" absolute rounded-md font-lobster left-10 w-80 inline-flex mb-2 mr-2 overflow-hidden text-3xl font-bold text-gray-900 group bg-gradient-to-br from-purple-500 to-pink-500 group-hover:from-purple-500 group-hover:to-pink-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800">
                     <span className="relative py-6 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md w-80 group-hover:bg-opacity-0">
